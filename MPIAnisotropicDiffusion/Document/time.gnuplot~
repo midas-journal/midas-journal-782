@@ -1,0 +1,7 @@
+set terminal postscript eps color solid rounded 
+set output "time.eps"
+
+plot \
+  "time_50slices.txt"  using 1:2 w l, \
+  "time_100slices.txt" using 1:2 w l, \
+  "time_200slices.txt" using 1:2 w l
